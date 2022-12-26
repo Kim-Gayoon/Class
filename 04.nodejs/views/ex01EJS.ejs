@@ -1,0 +1,28 @@
+<!-- ejs 파일은 html파일과는 다르게 서버에서 랜더링을 시켜줘야 한다!!! 
+ejs 파일 라우터를 만들어서 꼭 라우터로 실행 해 줘야 한다!!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>랜더링성공</h1>
+
+    <%
+        <!--  nodejs코드를 작성하는 영역 , script영역과는 별개의 영역이다 -->
+        console.log("라우터에서 보내는 name값: " + name1);
+    %>
+
+    라우터에서 보내는 name값 : <%=name1%> <br>   
+    라우터에서 보내는 name값 : <%=name2%>
+    <!--  출력하고자 할때는 '=' 을 써준다  -->
+    <script>
+        // 자바스크립트 코드를 작성하는 영역 
+        console.log("라우터에서 보내는 name값: " + name);
+    </script>
+</body>
+</html>

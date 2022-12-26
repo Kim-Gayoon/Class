@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	tr{
+		height: 40px;
+	}
+</style>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>	
+	<form action="http://127.0.0.1:3001/Join" method="post">
+		<!-- action설정 해 줘야 돌아간다~~~!!!!!!!!!!! -->
+		<fieldset>
+			<legend>Join Page</legend>		
+			<table align="center">
+				<!-- 보면 각각에 name이 존재하지 않음 -> name 설정 필요 -->
+				<tr>
+					<td><label for="id">ID</label></td>
+					<td><input type="text" id="id" name="id"></td>
+				</tr>
+				<tr>
+					<td><label for="pw">PW</label></td>
+					<td><input type="password" id="pw" name="pw"></td>
+				</tr>			
+				<tr>
+					<td><label for="name">NAME</label></td>
+					<td><input type="text" id="name" name="name"></td>
+				</tr>				
+				<tr>
+					<td><label for="email">EMAIL</label></td>
+					<td><input type="email" id="email" name="email"></td>
+				</tr>				
+				<tr>
+					<td><label for="tel">TEL</label></td>
+					<td><input type="tel" id="tel" name="tel"></td>
+				</tr>
+				<!--radio 나 checkbox같은 경우에는 value값이 설정되어 있어야 한다 -->
+				<tr>
+					<td><label for="gender">GENDER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label></td>
+					<td>MAN<input name="gender" type="radio" id="gender" value="man">WOMEN<input name="gender" id=gen2 type="radio" id="gender" value="women"></td>
+				</tr>
+				<tr>
+					<td><label for="hobby">HOBBY</label></td>
+					<td>SPORT<input name=hobby type="checkbox" id="hobby" value="sport">STUDY<input name=hobby type="checkbox" id="hobby" value="study">EATING<input name=hobby type="checkbox" id="hobby" value="eating"></td>
+				</tr>
+				<tr>
+					<td><label for="birth">BIRTHDAY</label></td>
+					<td><input type="date" id="birth" name="birth"></td>
+				</tr>
+				<tr>
+					<td><label for="color">COLOR</label></td>
+					<td><input type="color" id="color" name="color"></td>
+				</tr>
+				<tr>
+					<td><label for="country">COUNTRY</label></td>
+					<td><select id="country" name="country">
+					<option>choice..</option>
+					<option>KOREA</option>
+					<option>USA</option>
+					</select>
+					</td>
+				</tr>	
+				<tr>
+					<td><label for="talk">TALK</label></td>
+					<td><textarea id="talk" rows="10" cols="30" name="talk"></textarea>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="submit" value="회원가입"></td>
+				</tr>																				
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
