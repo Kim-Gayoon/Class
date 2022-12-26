@@ -1,6 +1,0 @@
-radio / checkbox = name, value 값을 설정해 줘야 함 
-input type = "radio" name="gender" value="man"
-  
-
-radio = 중복선택 불가능 
-checkbox = 중복 선택 가능
