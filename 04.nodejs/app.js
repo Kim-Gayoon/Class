@@ -17,7 +17,7 @@ const mysql_session = require("express-mysql-session")      // 세션이 저장�
 let conn = {
     host : "127.0.0.1",
     user : "root",
-    password : "abcd~1234",
+    password : ----- ,
     port: "3306",
     database : "nodejs_db"
 }
